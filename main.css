@@ -142,3 +142,69 @@ body {
 	padding-top: 90px;
 	right: 40px;
 }
+
+#player {
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+}
+
+.audiojs {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #eee), color-stop(0.5, #fff), color-stop(0.51, #eee), color-stop(1, #eee));
+	width: 100%;
+	display: none;
+}
+
+.audiojs .loaded {
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #00004b), color-stop(0.5, #000), color-stop(0.51, #00004b), color-stop(1, #00004b));
+}
+
+.audiojs .scrubber {
+	background: #00004b;
+	width: calc(100% - 175px)
+}
+
+.audiojs .time em, .audiojs .time {
+	color: #00004b;
+}
+
+.featuredIllustration {
+
+}
+
+.playStory {
+	text-align: center;
+}
+
+.featuredStory .playStory {
+	height: 250px;
+}
+
+.story .playStory {
+	height: 180px;
+}
+
+.button {
+	position: absolute;
+	margin-left: -40px;
+	height: 80px;
+	margin-top: 50px;
+	display: none;
+}
+
+.featuredStory .button {
+	margin-top: 85px;
+}
+
+.playStory:hover {
+	filter: grayscale(100%);
+}
+
+.playStory:hover .button {
+	display: inline-block;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
