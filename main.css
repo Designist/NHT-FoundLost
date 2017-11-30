@@ -208,3 +208,16 @@ body {
 	cursor: pointer;
 }
 
+.audiojs .error-message {
+	color: #00004b;
+}
+
+@supports (-moz-appearance: none) {
+	.featuredStory .button {
+		margin-left: -215px;
+	}
+	.story .button {
+		margin-left: -172px;
+	}
+}
+

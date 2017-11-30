@@ -27,6 +27,12 @@ window.onload = function() {
 						var url = $(this).attr("data-url");
 						// $("#audioPlayer").attr("src", url);
 						as[0].load(url);
+
+						if (currentstory) {
+							$(currentstory).attr("src", "play.png");
+							$(currentstory)[0].classList.add('playbutton');
+							$(currentstory)[0].classList.remove('pausebutton');
+						}
 					}
 					$(this).attr("src", "pause.png");
 					$(this)[0].classList.add("pausebutton");
