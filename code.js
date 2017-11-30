@@ -23,13 +23,15 @@ window.onload = function() {
         var audioPlayer;
         $(".button").click(function() {
 			if ($(this).hasClass("playbutton")) { // switch to pause
-				currentstory = this;
 				$(this).attr("src", "pause.png");
 				$(this)[0].classList.add("pausebutton");
 				$(this)[0].classList.remove("playbutton");
 				$(".audiojs").css("display", "block");
 				var url = $(this).attr("data-url");
-				$("#audioPlayer").attr("src", url);
+				if (currentstory != this) {
+					$("#audioPlayer").attr("src", url);
+				}
+				currentstory = this;
 				$('.audiojs').each(function(index) {
 				    container = $(this);
 				    audioPlayer = container.find('audio');
